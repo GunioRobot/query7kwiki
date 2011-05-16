@@ -11,7 +11,8 @@
 		</p>
 		<hr>
 		<p>
-			<a href="/query7kwiki/index.php/wiki/<?php echo $page; ?>/edit">Edit</a>
+			
+			<a href="<?php echo Route::url('wiki-edit', array('page' => $page)); ?>">Edit</a>
 		</p>
 	</body>
 </html>

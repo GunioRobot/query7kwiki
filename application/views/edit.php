@@ -7,7 +7,7 @@
 		
 		<h1><?php echo $page; ?> - Edit</h1>
 		<p>
-			<form method="POST" action="/query7kwiki/index.php/wiki/<?php echo $page; ?>/save/"">
+			<form method="POST" action="<?php echo Route::url('wiki-save', array('page' => $page)); ?>">
 				
 				<textarea rows="10" cols="60" name="content"><?php echo $content; ?></textarea>
 				<br />
